@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>Day1</title>
+    </head>
+    <body>
+        Letsupgrade Day1 Assignment
+        <script>
+            /* console.log()
+            Mainly used to log(print) the output to the console. We can put any type inside the log(), be it a string, array, object, boolean etc. */
+            console.log('abc')
+            
+            /*console.error()
+            Used to log error message to the console. Useful in testing of code. By default the error message will be highlighted with red color.*/
+            console.error('This is a simple error')
+            
+            /*console.warn()
+            Used to log warning message to the console. By default the warning message will be highlighted with yellow color.*/
+            console.warn('This is a warning')
+
+            /*console.count()
+            This method is used to count the number that the function hit by this counting method. */
+            for(let i=0;i<5;i++){ 
+                console.count(i); 
+            }    
+
+            /* var: The scope of a variable defined with the keyword “var” is limited to the “function” within which it is defined. If it is defined outside any function, the scope of the variable is global.
+            var is “function scoped”.
+            let: The scope of a variable defined with the keyword “let” or “const” is limited to the “block” defined by curly braces i.e. {} .
+            “let” and “const” are“block scoped”.
+            const: The scope of a variable defined with the keyword “const” is limited to the block defined by curly braces. However if a variable is defined with keyword const, it cannot be reassigned.
+            “const” cannot be re-assigned to a new value. However it CAN be mutated. */
+            {
+              var a=10;
+              console.log(a);
+            } //block 1
+            
+            {
+                a++;
+                console.log(a);
+            } //block 2
+            /* Since we are using "var a=10", scope of "a" is limited to the function within which it is defined. In this case it is within the global function scope */
+            
+            {
+                let a=10;
+                console.log(a);
+            } //block 1
+            
+            {
+                a++;
+                console.log(a);
+            } //block 2
+            /* Since we are using "let a=10", scope of "a" is limited to block 1 and "a" is not recognized in block 2 */
+            
+            {
+                const PI=3.14;
+                console.log(PI);
+            } //block 1
+
+            {
+                console.log(PI);
+            } //block 2
+            /* Since we are using "const PI=3.14", scope of "PI" is limited to block 1 and "PI" is not recognized in block 2 */
+
+            /*JavaScript Data Types
+            JavaScript variables can hold many data types: numbers, strings, objects and more:
+            var length = 16;                               // Number
+            var lastName = "Johnson";                      // String
+            var x = {firstName:"John", lastName:"Doe"};    // Object 
+            
+            var x = 16 + 4 + "Volvo";
+            result: 20Volvo
+            In the first example, JavaScript treats 16 and 4 as numbers, until it reaches "Volvo".
+            JavaScript has dynamic types. This means that the same variable can be used to hold different data types:
+            var x;           // Now x is undefined
+            x = 5;           // Now x is a Number
+            x = "John";      // Now x is a String
+            Strings are written with quotes. You can use single or double quotes:
+            JavaScript has only one type of numbers.
+            Numbers can be written with, or without decimals:
+            Booleans can only have two values: true or false.
+            JavaScript arrays are written with square brackets.
+            JavaScript objects are written with curly braces {}.
+            Object properties are written as name:value pairs, separated by commas.
+            Primitive Data
+            A primitive data value is a single simple data value with no additional properties and methods.
+            The typeof operator can return one of these primitive types:
+            string
+            number
+            boolean
+            undefined
+            Complex Data
+            The typeof operator can return one of two complex types:
+            function
+            object
+            The typeof operator returns "object" for objects, arrays, and null.
+            The typeof operator does not return "object" for functions.
+                        
+            */
+
+
+        </script>
+
+    </body>
+</html>

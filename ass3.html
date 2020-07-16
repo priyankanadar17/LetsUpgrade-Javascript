@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3</title>
+</head>
+<body>
+    <script>
+        function check(n)
+        {
+            if(n%2==1)
+            {
+                console.log('The number entered is '+ n +' and it is odd.')
+            }
+            else{
+                console.log('The number entered is '+ n +' and it is even.')
+            }
+        }
+        var a=prompt("Enter number");
+        console.log(a);
+        check(a);
+        var o=prompt("Enter OS");
+        len=o.len;
+        to = o.indexOf(" ");
+        ver = o.substr(0,to);
+        no=o.substr(to+1,len);
+        console.log('The OS name is '+ver+' and version is '+no);
+        
+      var m=prompt('Enter marks');
+      if(m<35)
+      {
+          console.log('Marks is '+m+' and grade is F');
+      }
+      else if (m>=35 && m<50)
+      {
+          console.log('Marks is '+m+' and grade is C');
+      }
+      else if(m>=50 && m<70)
+      {
+        console.log('Marks is '+m+' and grade is B');
+      }
+      else if(m>=70 && m<80)
+      {
+        console.log('Marks is '+m+' and grade is A');
+      }
+      else if (m>=80 && m<=100){
+        console.log('Marks is '+m+' and grade is O');
+      }
+      else
+      {
+          console.log('Invalid score');
+      }
+
+      var marks=prompt('Enter 0 if <35,1 if >=35 and <50,2 if >=50 and <70,3 if >=70 and <80,4 if >=80 and <=100');
+      switch(marks)
+{
+          case '0':
+              console.log('grade is F');
+              break;
+          case '1':
+              console.log('grade is C');
+              break;
+          case '2':
+              console.log('grade is B');
+              break;
+          case '3':
+              console.log('grade is A');
+              break;
+          case '4':
+              console.log( 'grade is O');
+              break;
+          default:
+              console.log('Not valid');
+}
+
+    </script>
+    
+</body>
+</html>

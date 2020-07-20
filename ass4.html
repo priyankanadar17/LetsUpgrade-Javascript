@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 4</title>
+</head>
+<body>
+    <!--QUESTION 1-->
+    <script>
+        for (let a = 1; a <= 100 ; a++)
+        {
+            if(a % 3 == 0 && a % 5 == 0)
+            {
+                console.log("Fizzbuzz")
+                continue
+            }
+            if(a % 5 == 0)
+            {
+                console.log("Buzz")
+                continue
+            }
+            if(a % 3 == 0)
+            {
+                console.log("Fizz")
+                continue
+            }
+            else
+            {
+                console.log(a)
+            }
+        }
+        </script>   
+        <!--QUESTION 2-->
+            <script>
+            const student = {
+                name: "Helsinki",
+                age:24,
+                projects:{
+                    diceGame: "Two player dice game using JavaScript"
+                }
+            }
+    
+            console.log("My name is " + student.name);
+            console.log("My Age is " + student.age);
+            console.log("My projects are " + student.projects.diceGame);
+            </script>
+    
+        <!--QUESTION 3-->
+            <script>
+                const shoppingList = ['oats','corn','milk'];
+                let ShoppingBasket;
+    
+                ShoppingBasket = shoppingList.concat('popcorn','cereal');
+                ShoppingBasket = [...shoppingList, 'popcorn','cereal'];
+                console.log(shoppingList)
+                console.log(ShoppingBasket)
+    
+    
+            </script>
+    
+        <!--QUESTION 4-->
+        <script>
+            let x = 5;
+            let y = 10;
+            console.log("addition" + x + y)
+            console.log("subtraction" + x - y)
+            console.log("Mul" + x *y)
+            console.log("division" + x / y)
+            console.log("square root" + Math.sqrt(x))
+            console.log("percentage" + (x/y)*100)
+        </script>   
+        <!--QUESTION 5-->
+<script>
+    function check(m)
+       {    
+       if(m>=0 && m<=5000)
+       {
+           console.log('Commission is '+(m*0.02));
+       }
+       else if (m>=5001 && m<=10000)
+       {
+           console.log('Commission is '+(m*0.05));
+       }
+       else if(m>=10001 && m<=20000)
+       {
+         console.log('Commission is '+(m*0.07));
+       }
+       else if(m>20000)
+       {
+         console.log('Commission is '+(m*0.1));
+       }
+       
+       else
+       {
+           console.log('Invalid');
+       }
+     }
+     var m=prompt('Enter total sales');
+     check(m);
+ 
+ </script>
+ <!--QUESTION 6-->
+ <script>
+     var m=prompt('Enter total sales');
+     function check(m)
+       {    
+       if(m>=100 && m<=5000)
+       {
+           console.log('Commission is '+(m*0.02));
+       }
+       else if (m>=5001 && m<=10000)
+       {
+           console.log('Commission is '+(m*0.05));
+       }
+       else if(m>=10001 && m<=20000)
+       {
+         console.log('Commission is '+(m*0.07));
+       }
+       else if(m>20000)
+       {
+         console.log('Commission is '+(m*0.1));
+       }
+     }
+     m = prompt("Enter a number", ['']);
+        if(m <= 100){
+            prompt("Enter a number again","");
+        }
+        console.log(result);
+ check(m);
+ </script>
+ <!--QUESTION 7-->
+ <script>
+ var n=prompt('Enter n');
+ function isPrime(num) {
+     for ( var i = 2; i < num; i++ ) {
+         if ( num % i === 0 ) {
+             return false;
+         }
+     }
+     return true;
+ }
+ 
+ function display(num) {
+     var arr = [2];
+     for ( var i = 3; i < n; i+=2 ) {
+         if ( isPrime(i) ) {
+             arr.push(i);
+         }
+     }
+     console.log(arr); // use arr result on your own
+ }
+ isPrime(n);
+ display(n);
+ </script>
+ <!--QUESTION 8-->
+    <script>
+        function ask(question, yes, no) {
+            if (confirm(question)) yes()
+            else no();
+        }
+
+        ask(
+              "Do you agree?",
+              () => alert("You agreed."),
+              () => alert("You canceled the execution.")
+            );
+    </script>
+ 
+ 
+ 
+</body>
+</html>
